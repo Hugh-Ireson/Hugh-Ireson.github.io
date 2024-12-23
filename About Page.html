@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" 
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" 
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <title>About Me</title>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <script>
+        fetch('navbar.html')
+          .then(response => response.text()) 
+          .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+          })
+          .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+          });
+      </script> 
+      <div class="container mt-5 mb-5" >
+        <div class="row">
+            <div class="col-4">
+              <a href="#section1"><img src="imgs\Ethos Icon.png" alt="Ethos Icon" class="img-fluid" style="width: 70%; height: auto;"></a>
+            </div>
+            <div class="col-4">
+              <a href="#section2"><img src="imgs\Skillset Icon.png" alt="Skillset Icon" class="img-fluid" style="width: 70%; height: auto;"></a>
+            </div>
+            <div class="col-4">
+              <a href="#section3"><img src="imgs\Education Icon.png" alt="Education Icon" class="img-fluid" style="width: 70%; height: auto;"></a>
+            </div>
+        </div>
+      </div>
+    <div class="container">
+      <div class="row">
+          <div class="col-12 col-md-8 mx-auto mt-4 mb-4">
+              <h3 id="section1"><u>Ethos</u></h3>
+          </div>
+      </div>
+      <div class="row">            
+          <div class="col-12 col-md-8 mx-auto">
+              <p style="line-height: 2;">
+                 As a Computer Science student majoring in Data Analysis, I am deeply committed to an ethos built on precision,
+                 continuous learning, and collaborative problem-solving. I approach each project with a strong focus on data accuracy
+                  and integrity, ensuring that my analysis is not only insightful but also actionable. My passion for uncovering 
+                  patterns in complex datasets is complemented by a disciplined approach to deadlines, consistently delivering 
+                  results on time without compromising quality. I embrace new technologies and methodologies, staying current with 
+                  the latest trends in data science to enhance my skillset. I thrive in team environments, valuing open communication 
+                  and the exchange of ideas to create innovative solutions that drive meaningful business outcomes. My strong work 
+                  ethic, paired with a relentless drive to improve and contribute, makes me a dedicated and reliable candidate for 
+                  any data analyst role.
+              </p>
+          </div>
+      </div>
+  </div>
+  <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-8 mx-auto mt-4 mb-4">
+            <h3 id="section2"><u>Skill Set</u></h3>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-6" style="padding-left: 210px;">
+        <h5 style="line-height: 2;">Technical Skills</h5>
+        <ul style="line-height: 1.6;">
+          <li>Python proficiency</li>
+          <li>SQL proficiency</li>
+          <li>Certified proficiency with Microsoft Excel</li>
+          <li>Data management</li>
+          <li>Statistical aggregation</li>
+          <li>Data Mining skills</li>          
+        </ul>
+      </div>
+      <div class="col-6 " style="padding-left: 80px;">
+        <h5 style="line-height: 2;">Interpersonal Skils</h5>
+        <ul style="line-height: 1.6;">
+          <li>Team Leadership and Mentoring</li>
+          <li>Client Relationship Management</li>
+          <li>Collaboration and Teamwork</li>
+          <li>Effective Communicater</li>
+          <li>Trustworthiness and Professionalism</li>
+          <li>Self-Driven</li>
+        </ul>
+      </div>
+    </div>
+</div>
+<div class="container">
+  <div class="row">
+      <div class="col-12 col-md-8 mx-auto mt-4 mb-4">
+          <h3 id="section3"><u>Education</u></h3>
+      </div>
+  </div>
+  <div class="row">            
+      <div class="col-12 col-md-8 mx-auto">
+          <p style="line-height: 2;">
+            <b>2017</b> Graduated Al-Noori Muslim School 96.64 ATAR 
+            <ul> Studying: <li> Advanced Mathematics</li>
+            <li>Advanced English</li>
+            <li>Chemistry</li>
+            <li>Physics</li>
+            <li>Biology</li>
+            </ul>
+            <p><b>2018</b> passed first year of Pharmaceutical Studies at the University of Sydney</p>
+            <p><b>2019</b> passed first year of Bachelor of Science majoring in Biomedical Science at the University of Auckland</p>
+            <ul><li>Passed with Distinction in Physics</li></ul>
+            <p><b>2021</b> graduated with Level 5 Diploma of Animation at Yoobee Colleges</p>
+            <p><b>2022</b> graduated with a Level 6 Diploma of Animation at Yoobee Colleges</p>
+            <p><b>2024</b> passed first year of Bachelor of Computer Science Majoring in Data Science</p>  
+            <ul><li>Passed with distinction Level 5 ‘Data Analysis’ paper </li>
+            <li>Passed Level 5 ‘Business Programming for Business Analytics’ paper</li>
+            <li style="padding-bottom: 50px;">Passed with high distinction level 5 ‘Mathematics for Computing’ paper</li>
+            </ul>
+          </p>
+      </div>
+  </div>
+</div>
+    <div id="footer-placeholder"></div>
+
+    <script src="footer.js"></script>
+    <script>
+
+      fetch('footer.html')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.text();
+        })
+        .then(data => {
+          document.getElementById('footer-placeholder').innerHTML = data;
+        })
+        .catch(error => {
+          console.error('There was a problem with fetching the footer:', error);
+        });
+      </script>
+</body>
+</html>

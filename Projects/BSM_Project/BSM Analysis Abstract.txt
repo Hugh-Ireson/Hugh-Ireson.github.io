@@ -1,0 +1,7 @@
+BSM Analysis
+
+Abstract
+This project employs data mining techniques to analyse stock option chain data, utilizing the Black-Scholes model to calculate the relative value of option prices and graph the volatility skew of stock options. The analysis begins with data mining processes to extract and stock option data, ensuring the dataset is prepared for financial modelling. Predictive analysis is applied to forecast potential option prices based on historical trends, volatility, and market conditions, enabling the assessment of pricing deviations from theoretical values. Financial analysis is central to evaluating the effectiveness of the Black-Scholes model, determining the intrinsic value of options and the influence of market factors like volatility and time decay. Strategic analysis is employed to interpret the volatility skew, providing insights into market sentiment and investor expectations across different strike prices and expiration dates. By leveraging these analytical techniques, the project offers valuable insights for traders and investors to make informed decisions, manage risks, and optimize trading strategies based on option pricing behaviour and volatility patterns.
+
+
+

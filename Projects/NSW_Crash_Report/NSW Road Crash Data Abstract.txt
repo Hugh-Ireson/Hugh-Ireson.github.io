@@ -1,0 +1,4 @@
+NSW Road Crash Data
+
+Abstract
+This report provides a comprehensive analysis of the New South Wales (NSW) crash data from 2016 to 2020 uncovering patterns and insights related to road accidents. Statistical aggregation methods were employed to summarize key variables, such as number of deaths, number of serious injuries, and rates of outcomes.  EDA techniques, including data visualizations and correlation analyses, were applied to identify trends and anomalies, revealing significant patterns, such as the correlation between weather conditions and crash rates. Descriptive data analysis further enhanced understanding by providing a clear picture of the crash landscape, highlighting factors such as speed, lighting, surface condition, weather and road types involved in accidents. The findings from this analysis offer valuable insights for policymakers and public safety officials, contributing to informed decision-making aimed at improving road safety in NSW.

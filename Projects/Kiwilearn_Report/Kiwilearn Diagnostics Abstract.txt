@@ -1,0 +1,7 @@
+Kiwilearn Performance Rating Diagnostics
+ 
+
+Abstract
+This report analyses the Kiwilearn dataset, which spans four departments—HR, IT, Marketing, and Sales—and includes employee data on performance ratings, training hours, experience, and salary. The analysis employs regression analytics to explore the relationships between performance ratings and key factors such as training hours and experience, aiming to identify how these variables influence employee performance across different departments. Through the application of process optimization techniques, the report suggests strategies for improving employee training and development processes to enhance performance outcomes. Diagnostic analysis is conducted to uncover underlying causes of performance variations, linking training hours and experience levels with fluctuations in performance ratings. Additionally, prescriptive analytics is used to provide actionable recommendations for HR and department managers on how to optimize training programs and career development initiatives for maximizing employee performance. The insights gained from this analysis contribute to improving workforce management, enhancing employee productivity, and fostering more effective organizational practices.
+
+

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" 
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" 
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <style>
+        .banner {
+            background-image: url('imgs/NSW-Roads-Maritime-Services-Logo-Banner.png'); 
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            position: relative;
+            }
+        .banner .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+    </style>
+    <title>NSW Road Crash Report</title>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <script>
+         fetch('navbar.html')    
+          .then(response => response.text()) 
+          .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;  
+          })
+          .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+          });
+      </script> 
+      <div class="banner">
+        <div class="text-overlay">
+          <h1 style="font-size: 80px;">NSW Road Crashes Report</h1>
+          <p class="lead" style="font-size: 30px; font-weight: 100;">What factors affects rate of injury or death in traffic incidents?</p>
+        </div>
+      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8 mx-auto mt-4 mb-4">
+                <h2 style="padding-top: 10px;"><u>Abstract</u></h2>
+            </div>
+        </div>
+        <div class="row">            
+            <div class="col-12 col-md-8 mx-auto">
+                <p style="line-height: 2;">
+                     This report provides a comprehensive analysis of the New South Wales (NSW) crash data from 2016 to 2020 uncovering
+                     patterns and insights related to road accidents. Statistical aggregation methods were employed to summarize key 
+                     variables, such as number of deaths, number of serious injuries, and rates of outcomes. EDA techniques, including 
+                     data visualizations and correlation analyses, were applied to identify trends and anomalies, revealing significant 
+                     patterns, such as the correlation between weather conditions and crash rates. Descriptive data analysis further 
+                     enhanced understanding by providing a clear picture of the crash landscape, highlighting factors such as speed, 
+                     lighting, surface condition, weather and road types involved in accidents. The findings from this analysis offer 
+                     valuable insights for policymakers and public safety officials, contributing to informed decision-making aimed at 
+                     improving road safety in NSW.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-8 mx-auto">
+          <h2 style="padding-top: 10px;"><u>Results</u></h2>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-8 mx-auto">
+              <h3 style="line-height: 3;">Days and Crashes table</h3>
+              <img src="imgs\Days and crashes table.png" alt="Days and Crashes table" style="padding-bottom: 10px; width: 40%; height: auto;">
+              <p style="line-height: 2;"><b>Figure 1.1:</b> The number of crashes resulting in death in NSW from 2016-2020 over the 
+                days of the week</p>
+            </div>
+          </div>
+              <div class="row">
+                <div class="col-8 mx-auto">
+                  <h3 style="line-height: 3;">Lighting and crashes table</h3>
+                  <img src="imgs\Lighting and crashes table.png" alt="Lighting and crashes table" style="padding-bottom: 10px; width: 105%; height: auto;">
+                  <p style="line-height: 2;"><b>Figure 1.2:</b> The number and rate of crashes resulting in death and injury in NSW 
+                    from 2016-2020 in different lighting conditions</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-8 mx-auto">
+                  <h3 style="line-height: 3;">Speeds and crashes</h3>
+                  <img src="imgs\Speeds and crashes.png" alt="Speeds and crashes" style="padding-bottom: 10px; width: 105%; height: auto;">
+                  <p style="line-height: 2;"><b>Figure 1.3:</b> The number and rate of crashes resulting in death and injury in NSW 
+                    from 2016-2020 at different speeds</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-8 mx-auto">
+                  <h3 style="line-height: 3;">Surface conditions table</h3>
+                  <img src="imgs\Surface conditions table.png" alt="Surface conditions table" style="padding-bottom: 10px; width: 105%; height: auto;">
+                  <p style="line-height: 2;"><b>Figure 1.4:</b> The number and rate of crashes resulting in death and injury in NSW 
+                    from 2016-2020 in different road surface conditions</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-8 mx-auto">
+                  <h3 style="line-height: 3;">Weather conditions table</h3>
+                  <img src="imgs\Weather conditions table.png" alt="Weather conditions table" style="padding-bottom: 10px; width: 105%; height: auto;">
+                  <p style="line-height: 2;"><b>Figure 1.5:</b> The number and rate of crashes resulting in death and injury in NSW 
+                    from 2016-2020 in different weather conditions</p>
+                </div>
+              </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <div id="footer-placeholder"></div>
+
+    <script src="footer.js"></script>
+    <script>
+
+        fetch('footer.html')
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.text();
+          })
+          .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+          })
+          .catch(error => {
+            console.error('There was a problem with fetching the footer:', error);
+          });
+        </script>
+</body>
+</html>

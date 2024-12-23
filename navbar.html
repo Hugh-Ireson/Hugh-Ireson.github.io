@@ -1,0 +1,44 @@
+   <style> 
+   .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;}
+    .navbar .nav-item .dropdown-toggle::after {
+    display: none;
+    }
+    .nav-item .dropdown-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    }   
+  </style>
+<nav class="navbar navbar-expand-sm" style="background-color: #04253a;">
+  <div class="container">
+    <ul class="navbar-nav d-flex justify-content-between w-100">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html" style="color: #ffff;">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="About Page.html" style="color: #ffff;">About Me</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="Project.html" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ffff;">
+          Projects
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+          <li><a class="dropdown-item" href="NSW Road Crash Report.html">NSW Road Crash Report</a></li>
+          <li><a class="dropdown-item" href="Bike Sharing Dataset.html">Bike Sharing Dataset</a></li>
+          <li><a class="dropdown-item" href="Kiwilearn Diagnostics.html">Kiwilearn Diagnostics</a></li>
+          <li><a class="dropdown-item" href="Black_Scholes Model.html">Black-Scholes Model Calculator</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Work Experience.html" style="color: #ffff;">Work Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Contact.html" style="color: #ffff;">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
