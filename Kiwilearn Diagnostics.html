@@ -1,130 +1,118 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <meta charset="UTF-8" />
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" 
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" 
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <style>
-        .banner {
-            background-image: url('imgs/Kiwilearn Banner Designed.png'); 
-            background-size: cover;
-            background-position: center;
-            height: 500px;
-            position: relative;
-            }
-            .banner .text-overlay {
-            position: absolute;
-            top: 30%;
-            left: 30%;
-            transform: translate(-50%, -50%);
-            color: rgb(0, 0, 0);
-            text-align: center;
-        }
-        .banner .subtext {
-            position: absolute;
-            top: 30%;
-            left: 30%;
-            transform: translate(-20%, 150%);
-            color: rgb(0, 0, 0);
-        }
-    </style>
-    <title>Kiwilearn Diagnostics</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Kiwilearn diagnostics — Humam Al-Taiff’s data science portfolio.">
+<meta name="theme-color" content="#151615">
+<title>Kiwilearn diagnostics | Humam Al-Taiff</title>
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-    <div id="navbar-placeholder"></div>
-
-    <script>
-         fetch('navbar.html')    
-          .then(response => response.text()) 
-          .then(data => {
-            document.getElementById('navbar-placeholder').innerHTML = data; 
-          })
-          .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
-          });
-      </script> 
-      <div class="banner">
-        <div class="text-overlay">
-          <h1 style="font-size: 80px;">Kiwilearn Diagnostics</h1>
-        </div>
-        <div class="subtext">
-          <p style="font-size: 30px; font-weight: 100;">Diagnostic Analysis of a </p>
-          <p style="font-size: 30px; font-weight: 100;">an Educational business for optimization</p>
-        </div>
-      </div>
-      </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-8 mx-auto mt-4 mb-4">
-                <h2><u>Abstract</u></h2>
-            </div>
-        </div>
-        <div class="row">            
-            <div class="col-12 col-md-8 mx-auto">
-                <p style="line-height: 2;">
-                    This report analyses the Kiwilearn dataset, which spans four departments—HR, IT, Marketing, and Sales—and 
-                    includes employee data on performance ratings, training hours, experience, and salary. The analysis employs 
-                    regression analytics to explore the relationships between performance ratings and key factors such as training 
-                    hours and experience, aiming to identify how these variables influence employee performance across different 
-                    departments. Through the application of process optimization techniques, the report suggests strategies for 
-                    improving employee training and development processes to enhance performance outcomes. Diagnostic analysis is 
-                    conducted to uncover underlying causes of performance variations, linking training hours and experience levels 
-                    with fluctuations in performance ratings. Additionally, prescriptive analytics is used to provide actionable 
-                    recommendations for HR and department managers on how to optimize training programs and career development 
-                    initiatives for maximizing employee performance. The insights gained from this analysis contribute to 
-                    improving workforce management, enhancing employee productivity, and fostering more effective organizational 
-                    practices.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-8 mx-auto mt-4 mb-4" >
-          <h2 style="line-height: 3;"><u>Report</u></h2>
-          <embed src="Projects\Kiwilearn_Report\20121076_23216497_Assessment_2_S2_2024_ (1).pdf" width="800" height="900" type="application/pdf">
-        </div>
-      </div>
-        <div class="row">
-            <div class="col-12 col-md-8 mx-auto mt-4 mb-4" >
-                <h2><u>Code</u></h2>
-            </div>
-        <div class="row">
-            <div class="col-12 col-md-8 mx-auto" >
-              <script src="https://gist.github.com/Hugh-Ireson/fb8fd0899cb067e210476744a68cb6d6.js"></script>
-        </div>  
-    </div>
-    </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <div id="footer-placeholder"></div>
-
-    <script src="footer.js"></script>
-    <script>
-
-        fetch('footer.html')
-          .then(response => {
-            if (!response.ok) {
-              throw new Error('Network response was not ok');
-            }
-            return response.text();
-          })
-          .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-          })
-          .catch(error => {
-            console.error('There was a problem with fetching the footer:', error);
-          });
-        </script>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<a class="brand" href="index.html" aria-label="Humam Al-Taiff home">H<span>.</span>
+</a>
+<nav aria-label="Main navigation">
+<a href="Project.html">Work</a>
+<a href="About Page.html">About</a>
+<a href="Black_Scholes Model.html">Calculator</a>
+<a class="contact-link" href="Contact.html">Let’s talk <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+</nav>
+</header>
+<main id="main">
+<section class="page-intro project-intro">
+<a class="text-link" href="Project.html">Back to All work</a>
+<p class="eyebrow">STATISTICAL ANALYSIS</p>
+<h1>Kiwilearn diagnostics</h1>
+<p>Examine relationships between training, department and employee performance.</p>
+<div class="tags">
+<a href="Kiwilearn Diagnostics.html#hypothesis-testing">Hypothesis testing <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+<a href="Kiwilearn Diagnostics.html#regression-analysis">Regression analysis <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+<a href="Kiwilearn Diagnostics.html#data-visualisation">Data visualisation <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+</div>
+<p class="tools">Python · Statsmodels · SciPy · Seaborn</p>
+</section>
+<div class="case-study">
+<section class="evidence" id="hypothesis-testing" tabindex="-1">
+<p class="eyebrow">SKILL IN PRACTICE</p>
+<h2>Hypothesis testing</h2>
+<p>Applied one-way ANOVA to compare performance ratings between departments, followed by Tukey HSD pairwise comparisons. The notebook records the test statistics and comparisons.</p>
+<a class="text-link" href="https://github.com/Hugh-Ireson/Hugh-Ireson.github.io/blob/main/Projects/Kiwilearn_Report/Kiwilearn_Code.ipynb">Inspect ANOVA and Tukey HSD in the notebook <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+</section>
+<section class="evidence" id="regression-analysis" tabindex="-1">
+<p class="eyebrow">SKILL IN PRACTICE</p>
+<h2>Regression analysis</h2>
+<p>Fitted an ordinary least squares model relating training hours to performance rating. Examined residual distributions, a Q–Q plot, an Anderson–Darling test and residuals against fitted values to assess assumptions.</p>
+<a class="text-link" href="https://github.com/Hugh-Ireson/Hugh-Ireson.github.io/blob/main/Projects/Kiwilearn_Report/Kiwilearn_Code.ipynb">Inspect the model and residual diagnostics <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+</section>
+<section class="evidence" id="data-visualisation" tabindex="-1">
+<p class="eyebrow">SKILL IN PRACTICE</p>
+<h2>Data visualisation</h2>
+<p>Used distribution plots, grouped comparisons and scatter plots to explore employee performance and explain the statistical analysis.</p>
+<figure class="evidence-figure">
+<img loading="lazy" src="imgs/Kiwilearn-thumbnail.png" alt="Kiwilearn analysis project visual">
+<figcaption>Kiwilearn analysis project visual</figcaption>
+</figure>
+</section>
+<section class="evidence">
+<h2>Explore the work</h2>
+<a class="button" href="Projects/Kiwilearn_Report/20121076_23216497_Assessment_2_S2_2024_ (1).pdf">Read the report <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+</section>
+</div>
+</main>
+<footer>
+<div>
+<a class="brand" href="index.html">H<span>.</span>
+</a>
+<p>Curiosity. Analysis. Useful outcomes.</p>
+</div>
+<div>
+<a href="mailto:altaiffh@hotmail.com">Email <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+<a href="https://www.linkedin.com/in/humam-al-taiff-bb3a87273/">LinkedIn <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+<a href="https://github.com/Hugh-Ireson">GitHub <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+</div>
+<small>© Humam Al-Taiff</small>
+</footer>
+<script src="assets/site.js" defer>
+</script>
 </body>
 </html>

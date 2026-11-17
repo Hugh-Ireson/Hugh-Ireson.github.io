@@ -1,151 +1,192 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <meta charset="UTF-8" />
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" 
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" 
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <title>About Me</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="About me — Humam Al-Taiff’s data science portfolio.">
+<meta name="theme-color" content="#151615">
+<title>About me | Humam Al-Taiff</title>
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-    <div id="navbar-placeholder"></div>
-
-    <script>
-        fetch('navbar.html')
-          .then(response => response.text()) 
-          .then(data => {
-            document.getElementById('navbar-placeholder').innerHTML = data;
-          })
-          .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
-          });
-      </script> 
-      <div class="container mt-5 mb-5 d-flex justify-content-center" >
-        <div class="row">
-          <div class="col-12 col-md-8 mx-auto">
-            <div class="row justify-content-center">
-            <div class="col-4 mx-auto">
-              <a href="#section1"><img src="imgs\Ethos Icon.png" alt="Ethos Icon" class="img-fluid" style="width: 70%; height: auto;"></a>
-            </div>
-            <div class="col-4 mx-auto">
-              <a href="#section2"><img src="imgs\Skillset Icon.png" alt="Skillset Icon" class="img-fluid" style="width: 70%; height: auto;"></a>
-            </div>
-            <div class="col-4 mx-auto">
-              <a href="#section3"><img src="imgs\Education Icon.png" alt="Education Icon" class="img-fluid" style="width: 70%; height: auto;"></a>
-            </div>
-        </div>
-      </div>
-    </div>
-      </div>
-    <div class="container">
-      <div class="row">
-          <div class="col-12 col-md-8 mx-auto mt-4 mb-4">
-              <h3 id="section1"><u>Ethos</u></h3>
-          </div>
-      </div>
-      <div class="row">            
-          <div class="col-12 col-md-8 mx-auto">
-              <p style="line-height: 2;">
-                 As a Computer Science student majoring in Data Analysis, I am deeply committed to an ethos built on precision,
-                 continuous learning, and collaborative problem-solving. I approach each project with a strong focus on data accuracy
-                  and integrity, ensuring that my analysis is not only insightful but also actionable. My passion for uncovering 
-                  patterns in complex datasets is complemented by a disciplined approach to deadlines, consistently delivering 
-                  results on time without compromising quality. I embrace new technologies and methodologies, staying current with 
-                  the latest trends in data science to enhance my skillset. I thrive in team environments, valuing open communication 
-                  and the exchange of ideas to create innovative solutions that drive meaningful business outcomes. My strong work 
-                  ethic, paired with a relentless drive to improve and contribute, makes me a dedicated and reliable candidate for 
-                  any data analyst role.
-              </p>
-          </div>
-      </div>
-  </div>
-  <div class="container">
-    <div class="row">
-        <div class="col-12 col-md-8 mx-auto mt-4 mb-4">
-            <h3 id="section2"><u>Skill Set</u></h3>
-        </div>
-    </div>
-    <div class="row">
-      <div class="col-6" style="padding-left: 210px;">
-        <h5 style="line-height: 2;">Technical Skills</h5>
-        <ul style="line-height: 1.6;">
-          <li>Python proficiency</li>
-          <li>SQL proficiency</li>
-          <li>Certified proficiency with Microsoft Excel</li>
-          <li>Data management</li>
-          <li>Statistical aggregation</li>
-          <li>Data Mining skills</li>          
-        </ul>
-      </div>
-      <div class="col-6 " style="padding-left: 80px;">
-        <h5 style="line-height: 2;">Interpersonal Skils</h5>
-        <ul style="line-height: 1.6;">
-          <li>Team Leadership and Mentoring</li>
-          <li>Client Relationship Management</li>
-          <li>Collaboration and Teamwork</li>
-          <li>Effective Communicater</li>
-          <li>Trustworthiness and Professionalism</li>
-          <li>Self-Driven</li>
-        </ul>
-      </div>
-    </div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<a class="brand" href="index.html" aria-label="Humam Al-Taiff home">H<span>.</span>
+</a>
+<nav aria-label="Main navigation">
+<a href="Project.html">Work</a>
+<a href="About Page.html">About</a>
+<a href="Black_Scholes Model.html">Calculator</a>
+<a class="contact-link" href="Contact.html">Let’s talk <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+</nav>
+</header>
+<main id="main">
+<section class="hero about-hero">
+<div>
+<p class="eyebrow">A LITTLE ABOUT ME</p>
+<h1>Curious by nature.<br>
+<em>Analytical by practice.</em>
+</h1>
+<p class="intro">I’m Humam, a computer science student specialising in data science, with an interest in financial modelling and machine learning.</p>
+<p>I value precision, continuous learning and collaborative problem-solving. My experience in tutoring and customer service shapes how I communicate technical ideas: clearly, patiently and with a purpose.</p>
+<a class="text-link" href="Project.html">See my work <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
 </div>
-<div class="container">
-  <div class="row">
-      <div class="col-12 col-md-8 mx-auto mt-4 mb-4">
-          <h3 id="section3"><u>Education</u></h3>
-      </div>
-  </div>
-  <div class="row">            
-      <div class="col-12 col-md-8 mx-auto">
-          <p style="line-height: 2;">
-            <b>2017</b> Graduated Al-Noori Muslim School 96.64 ATAR 
-            <ul> Studying: <li> Advanced Mathematics</li>
-            <li>Advanced English</li>
-            <li>Chemistry</li>
-            <li>Physics</li>
-            <li>Biology</li>
-            </ul>
-            <p><b>2018</b> passed first year of Pharmaceutical Studies at the University of Sydney</p>
-            <p><b>2019</b> passed first year of Bachelor of Science majoring in Biomedical Science at the University of Auckland</p>
-            <ul><li>Passed with Distinction in Physics</li></ul>
-            <p><b>2021</b> graduated with Level 5 Diploma of Animation at Yoobee Colleges</p>
-            <p><b>2022</b> graduated with a Level 6 Diploma of Animation at Yoobee Colleges</p>
-            <p><b>2024</b> passed first year of Bachelor of Computer Science Majoring in Data Science</p>  
-            <ul><li>Passed with distinction Level 5 ‘Data Analysis’ paper </li>
-            <li>Passed Level 5 ‘Business Programming for Business Analytics’ paper</li>
-            <li style="padding-bottom: 50px;">Passed with high distinction level 5 ‘Mathematics for Computing’ paper</li>
-            </ul>
-          </p>
-      </div>
-  </div>
+<figure class="portrait">
+<img src="2025-1 Edited.jpg" alt="Humam Al-Taiff">
+</figure>
+</section>
+<section class="section">
+<div class="section-heading">
+<div>
+<p class="eyebrow">CAPABILITIES</p>
+<h2>Skills in context.</h2>
 </div>
-    <div id="footer-placeholder"></div>
-
-    <script src="footer.js"></script>
-    <script>
-
-      fetch('footer.html')
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
-          return response.text();
-        })
-        .then(data => {
-          document.getElementById('footer-placeholder').innerHTML = data;
-        })
-        .catch(error => {
-          console.error('There was a problem with fetching the footer:', error);
-        });
-      </script>
+</div>
+<div class="skill-list">
+<div class="tags">
+<a href="Black_Scholes Model.html#financial-modelling">Financial modelling <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+<a href="Black_Scholes Model.html#data-visualisation">Data visualisation <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+<a href="Black_Scholes Model.html#ui-development">UI development <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+</div>
+<div class="tags">
+<a href="Bike Sharing Dataset.html#data-cleaning">Data cleaning <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+<a href="Bike Sharing Dataset.html#exploratory-analysis">Exploratory analysis <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+<a href="Bike Sharing Dataset.html#data-visualisation">Data visualisation <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+</div>
+<div class="tags">
+<a href="Kiwilearn Diagnostics.html#hypothesis-testing">Hypothesis testing <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+<a href="Kiwilearn Diagnostics.html#regression-analysis">Regression analysis <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+<a href="Kiwilearn Diagnostics.html#data-visualisation">Data visualisation <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+</div>
+<div class="tags">
+<a href="NSW Road Crash Report.html#data-aggregation">Data aggregation <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+<a href="NSW Road Crash Report.html#exploratory-analysis">Exploratory analysis <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+<a href="NSW Road Crash Report.html#data-communication">Data communication <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+</div>
+</div>
+<p>Python · SQL · Excel · Pandas · Matplotlib · Statistical analysis</p>
+</section>
+<section class="section prose">
+<p class="eyebrow">BACKGROUND</p>
+<h2>Education & learning</h2>
+<div class="education">
+<p>
+<b>2024 — AUT</b>
+<br>Computer Science, majoring in Data Science. First-year papers included Data Analysis (distinction), Mathematics for Computing (high distinction), and Business Programming for Business Analytics.</p>
+<p>
+<b>2021–2022 — Yoobee Colleges</b>
+<br>Level 5 and Level 6 Diplomas of Animation.</p>
+<p>
+<b>2019 — University of Auckland</b>
+<br>Completed first-year Bachelor of Science studies in Biomedical Science, including a distinction in Physics.</p>
+<p>
+<b>2018 — University of Sydney</b>
+<br>Completed first-year Pharmaceutical Studies.</p>
+<p>
+<b>2017 — Al-Noori Muslim School</b>
+<br>Graduated with a 96.64 ATAR. Studied Advanced Mathematics, Advanced English, Chemistry, Physics and Biology.</p>
+</div>
+</section>
+<section class="section prose">
+<p class="eyebrow">WORKING WITH ME</p>
+<h2>What others say</h2>
+<blockquote>“Humam has been an outstanding member of our team at Anime House. Their positive attitude, strong work ethic, and exceptional customer service skills make them a valuable asset to any organization.”<cite>Jerry Shen · Owner, Anime House</cite>
+</blockquote>
+<blockquote>“We have watched his love of Math become confident and enquiring. Thank you Humam.”<cite>Ann Fletcher · Client, Cell Tuition</cite>
+</blockquote>
+</section>
+</main>
+<footer>
+<div>
+<a class="brand" href="index.html">H<span>.</span>
+</a>
+<p>Curiosity. Analysis. Useful outcomes.</p>
+</div>
+<div>
+<a href="mailto:altaiffh@hotmail.com">Email <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+<a href="https://www.linkedin.com/in/humam-al-taiff-bb3a87273/">LinkedIn <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+<a href="https://github.com/Hugh-Ireson">GitHub <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+</div>
+<small>© Humam Al-Taiff</small>
+</footer>
+<script src="assets/site.js" defer>
+</script>
 </body>
 </html>

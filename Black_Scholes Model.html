@@ -1,121 +1,212 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <meta charset="UTF-8" />
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" 
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" 
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <style>
-        .banner {
-            background-image: url('imgs/BSM Banner Designed.png'); 
-            background-size: cover;
-            background-position: center;
-            height: 500px;
-            position: relative;
-            }
-            .banner .text-overlay {
-            position: absolute;
-            top: 30%;
-            left: 30%;
-            transform: translate(-50%, -50%);
-            color: rgb(0, 0, 0);
-            text-align: center;
-        }
-        .banner .subtext {
-            position: absolute;
-            top: 30%;
-            left: 30%;
-            transform: translate(-20%, 150%);
-            color: rgb(0, 0, 0);
-        }
-    </style>
-    <title>Black-Scholes Model</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Black–Scholes calculator — Humam Al-Taiff’s data science portfolio.">
+<meta name="theme-color" content="#151615">
+<title>Black–Scholes calculator | Humam Al-Taiff</title>
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-    <div id="navbar-placeholder"></div>
-
-    <script>
-           fetch('navbar.html')
-          .then(response => response.text())  
-          .then(data => {
-            document.getElementById('navbar-placeholder').innerHTML = data;  
-          })
-          .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
-          });
-      </script> 
-      <div class="banner mb-4">
-        <div class="text-overlay">
-          <h1 style="font-size: 80px;">Black-Scholes Model</h1>
-        </div>
-        <div class="subtext">
-          <p style="font-size: 30px; font-weight: 100;">Black-Scholes Model Calculator </p>
-          <p style="font-size: 30px; font-weight: 100;">used to calculate relative option value</p>
-        </div>
-      </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-8 mx-auto mt-4 mb-4">
-                <h2><u>Abstract</u></h2>
-            </div>
-        </div>
-        <div class="row">            
-            <div class="col-12 col-md-8 mx-auto">
-                <p style="line-height: 2;">
-                    This project employs data mining techniques to analyse stock option chain data, utilizing the Black-Scholes model 
-                    to calculate the relative value of option prices and graph the volatility skew of stock options. The analysis 
-                    begins with data mining processes to extract and stock option data, ensuring the dataset is prepared for financial 
-                    modelling. Predictive analysis is applied to forecast potential option prices based on historical trends, 
-                    volatility, and market conditions, enabling the assessment of pricing deviations from theoretical values. 
-                    Financial analysis is central to evaluating the effectiveness of the Black-Scholes model, determining the intrinsic
-                     value of options and the influence of market factors like volatility and time decay. Strategic analysis is employed
-                      to interpret the volatility skew, providing insights into market sentiment and investor expectations across 
-                      different strike prices and expiration dates. By leveraging these analytical techniques, the project offers 
-                      valuable insights for traders and investors to make informed decisions, manage risks, and optimize trading 
-                      strategies based on option pricing behaviour and volatility patterns.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-8 mx-auto mt-4 mb-4" >
-                <h2><u>Code</u></h2>
-            </div>
-            </div>
-        <div class="row">
-            <div class="col-12 col-md-8 mx-auto" >
-                <script src="https://gist.github.com/Hugh-Ireson/b338fcd951abf0fa62b87686c3882b67.js"></script>
-            </div>
-            </div>  
-    </div>
-      <div id="footer-placeholder"></div>
-
-      <script src="footer.js"></script>
-      <script>
-
-        fetch('footer.html')
-          .then(response => {
-            if (!response.ok) {
-              throw new Error('Network response was not ok');
-            }
-            return response.text();
-          })
-          .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-          })
-          .catch(error => {
-            console.error('There was a problem with fetching the footer:', error);
-          });
-        </script>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<a class="brand" href="index.html" aria-label="Humam Al-Taiff home">H<span>.</span>
+</a>
+<nav aria-label="Main navigation">
+<a href="Project.html">Work</a>
+<a href="About Page.html">About</a>
+<a href="Black_Scholes Model.html">Calculator</a>
+<a class="contact-link" href="Contact.html">Let’s talk <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+</nav>
+</header>
+<main id="main">
+<section class="page-intro project-intro">
+<a class="text-link" href="Project.html">Back to All work</a>
+<p class="eyebrow">FINANCIAL MODELLING</p>
+<h1>Black–Scholes calculator</h1>
+<p>Explore how price, volatility and time affect the theoretical value of an option.</p>
+<div class="tags">
+<a href="Black_Scholes Model.html#financial-modelling">Financial modelling <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+<a href="Black_Scholes Model.html#data-visualisation">Data visualisation <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+<a href="Black_Scholes Model.html#ui-development">UI development <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+</div>
+<p class="tools">JavaScript · Python</p>
+</section>
+<section id="calculator" class="calculator-section">
+<div class="section-heading">
+<div>
+<p class="eyebrow">INTERACTIVE MODEL</p>
+<h2>Change an input. Explore the effect.</h2>
+</div>
+<span class="badge">EUROPEAN OPTIONS</span>
+</div>
+<div class="calculator">
+<form id="calculator-form">
+<div class="form-heading">
+<h3>Model inputs</h3>
+<button type="reset" class="reset">Reset <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</button>
+</div>
+<p class="muted">Use a consistent currency for both prices. Rates are annual percentages; time uses days / 365.</p>
+<div class="input-grid">
+<label for="spot">Underlying price<input id="spot" name="spot" type="number" value="100" min="0.01" max="1000000" step="0.01" required>
+</label>
+<label for="strike">Strike price<input id="strike" name="strike" type="number" value="100" min="0.01" max="1000000" step="0.01" required>
+</label>
+<label for="days">Days to expiry<input id="days" name="days" type="number" value="365" min="0" max="36500" step="1" required>
+</label>
+<label for="volatility">Volatility (%)<input id="volatility" name="volatility" type="number" value="20" min="0" max="500" step="0.1" required>
+</label>
+<label for="rate">Risk-free rate (%)<input id="rate" name="rate" type="number" value="5" min="-50" max="100" step="0.1" required>
+</label>
+<label for="dividend">Dividend yield (%)<input id="dividend" name="dividend" type="number" value="0" min="0" max="100" step="0.1" required>
+</label>
+</div>
+<button class="button" type="submit">Calculate values <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</button>
+<p id="calc-error" class="error" role="alert">
+</p>
+</form>
+<div class="results">
+<p class="eyebrow">THEORETICAL VALUE / PER UNIT</p>
+<div class="prices" aria-live="polite" aria-atomic="true">
+<div>
+<span>Call option</span>
+<output id="call-price">—</output>
+</div>
+<div>
+<span>Put option</span>
+<output id="put-price">—</output>
+</div>
+</div>
+<p class="muted" id="result-note">Values use the inputs shown.</p>
+<div class="table-wrap">
+<table>
+<caption>Option Greeks</caption>
+<thead>
+<tr>
+<th scope="col">Sensitivity</th>
+<th scope="col">Call</th>
+<th scope="col">Put</th>
+</tr>
+</thead>
+<tbody id="greeks">
+</tbody>
+</table>
+</div>
+<p class="muted">Delta and gamma per price unit · theta per calendar day · vega and rho per 1 percentage point. At expiry or zero volatility, Greeks are shown as unavailable.</p>
+</div>
+</div>
+</section>
+<div class="case-study">
+<section class="evidence" id="financial-modelling" tabindex="-1">
+<p class="eyebrow">SKILL IN PRACTICE</p>
+<h2>Financial modelling</h2>
+<p>This browser calculator implements the dividend-adjusted Black–Scholes equations for European calls and puts. It handles expiry using intrinsic value and zero volatility using discounted deterministic payoff.</p>
+<div class="formula">C = S e<sup>−qT</sup> N(d₁) − K e<sup>−rT</sup> N(d₂)<br>P = K e<sup>−rT</sup> N(−d₂) − S e<sup>−qT</sup> N(−d₁)</div>
+<p>Assumptions include constant volatility, constant rates and continuous dividend yield, frictionless markets and European exercise. Inputs are manual; this demo does not retrieve live option chains or estimate implied volatility.</p>
+</section>
+<section class="evidence" id="data-visualisation" tabindex="-1">
+<p class="eyebrow">SKILL IN PRACTICE</p>
+<h2>Price sensitivity</h2>
+<p>The chart recalculates call and put values across underlying prices while keeping the remaining inputs fixed. It is a model sensitivity curve, not a forecast or volatility-skew chart.</p>
+<div class="chart-key">
+<span>● Call</span>
+<span>● Put</span>
+</div>
+<svg id="sensitivity-chart" viewBox="0 0 760 340" role="img" aria-labelledby="chart-title chart-desc">
+<title id="chart-title">Option value against underlying price</title>
+<desc id="chart-desc">Calculate values to update this sensitivity chart.</desc>
+</svg>
+<details>
+<summary>View chart data</summary>
+<div class="table-wrap">
+<table>
+<caption>Sensitivity values using current inputs</caption>
+<thead>
+<tr>
+<th>Underlying price</th>
+<th>Call value</th>
+<th>Put value</th>
+</tr>
+</thead>
+<tbody id="chart-data">
+</tbody>
+</table>
+</div>
+</details>
+</section>
+<section class="evidence" id="ui-development" tabindex="-1">
+<p class="eyebrow">SKILL IN PRACTICE</p>
+<h2>UI development</h2>
+<p>Built a responsive, keyboard-accessible interface with labelled inputs, validation, live results and a text-table alternative to the chart. Calculations run locally in the browser.</p>
+<a class="text-link" href="https://github.com/Hugh-Ireson/Hugh-Ireson.github.io">View the website repository <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+</section>
+<section class="evidence">
+<h2>The original project</h2>
+<p>The original Python project explores option-chain data and volatility skew. The interactive calculator above is a browser implementation of the pricing model; the original source remains available separately.</p>
+<a class="button" href="https://gist.github.com/Hugh-Ireson/b338fcd951abf0fa62b87686c3882b67">View original Python Gist <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+</section>
+</div>
+</main>
+<footer>
+<div>
+<a class="brand" href="index.html">H<span>.</span>
+</a>
+<p>Curiosity. Analysis. Useful outcomes.</p>
+</div>
+<div>
+<a href="mailto:altaiffh@hotmail.com">Email <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+<a href="https://www.linkedin.com/in/humam-al-taiff-bb3a87273/">LinkedIn <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+<a href="https://github.com/Hugh-Ireson">GitHub <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+</div>
+<small>© Humam Al-Taiff</small>
+</footer>
+<script src="assets/site.js" defer>
+</script>
+<script src="assets/black-scholes.js" defer>
+</script>
+<script src="assets/calculator.js" defer>
+</script>
 </body>
 </html>
