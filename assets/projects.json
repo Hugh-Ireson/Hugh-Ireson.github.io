@@ -1,0 +1,94 @@
+[
+  {
+    "file": "Black_Scholes Model.html",
+    "name": "Black\u2013Scholes calculator",
+    "category": "FINANCIAL MODELLING",
+    "purpose": "Explore how price, volatility and time affect the theoretical value of an option.",
+    "outcome": "An interactive pricing tool with call and put values, Greeks and sensitivity analysis.",
+    "tools": "JavaScript \u00b7 Python",
+    "tags": [
+      [
+        "Financial modelling",
+        "financial-modelling"
+      ],
+      [
+        "Data visualisation",
+        "data-visualisation"
+      ],
+      [
+        "UI development",
+        "ui-development"
+      ]
+    ],
+    "image": "imgs/BSM thumbnail.png"
+  },
+  {
+    "file": "Bike Sharing Dataset.html",
+    "name": "Understanding bike demand",
+    "category": "EXPLORATORY ANALYSIS",
+    "purpose": "Investigate how weather, seasons and rider types relate to bike usage in Washington, D.C.",
+    "outcome": "A documented cleaning workflow and visual analysis of usage patterns.",
+    "tools": "Python \u00b7 Pandas \u00b7 Matplotlib \u00b7 SciPy",
+    "tags": [
+      [
+        "Data cleaning",
+        "data-cleaning"
+      ],
+      [
+        "Exploratory analysis",
+        "exploratory-analysis"
+      ],
+      [
+        "Data visualisation",
+        "data-visualisation"
+      ]
+    ],
+    "image": "imgs/Bike Sharing Dataset Diagnostics-Fitted.png"
+  },
+  {
+    "file": "Kiwilearn Diagnostics.html",
+    "name": "Kiwilearn diagnostics",
+    "category": "STATISTICAL ANALYSIS",
+    "purpose": "Examine relationships between training, department and employee performance.",
+    "outcome": "Statistical comparisons and regression diagnostics to inform workforce decisions.",
+    "tools": "Python \u00b7 Statsmodels \u00b7 SciPy \u00b7 Seaborn",
+    "tags": [
+      [
+        "Hypothesis testing",
+        "hypothesis-testing"
+      ],
+      [
+        "Regression analysis",
+        "regression-analysis"
+      ],
+      [
+        "Data visualisation",
+        "data-visualisation"
+      ]
+    ],
+    "image": "imgs/Kiwilearn-thumbnail.png"
+  },
+  {
+    "file": "NSW Road Crash Report.html",
+    "name": "NSW road crash analysis",
+    "category": "PUBLIC SAFETY DATA",
+    "purpose": "Explore crash severity across speed, lighting, weather and road conditions from 2016\u20132020.",
+    "outcome": "Comparative tables showing counts and rates of fatal and injury crashes.",
+    "tools": "Python \u00b7 Pandas",
+    "tags": [
+      [
+        "Data aggregation",
+        "data-aggregation"
+      ],
+      [
+        "Exploratory analysis",
+        "exploratory-analysis"
+      ],
+      [
+        "Data communication",
+        "data-communication"
+      ]
+    ],
+    "image": "imgs/Speeds and crashes.png"
+  }
+]

@@ -1,233 +1,270 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="path/to/bootstrap.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8" />
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" 
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" 
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <style>
-      a {
-          text-decoration: none;  
-          color: inherit;         
-      }
-      a:hover {
-          color: #007bff;         
-          text-decoration: none;  
-      }
-
-      
-  </style>
-    <title>Humam Al-Taiff Data Analysis Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Data science &amp; financial modelling — Humam Al-Taiff’s data science portfolio.">
+<meta name="theme-color" content="#151615">
+<title>Data science &amp; financial modelling | Humam Al-Taiff</title>
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-    <div id="navbar-placeholder"></div>
-
-    <script>
-        fetch('navbar.html')
-          .then(response => response.text())  
-          .then(data => {
-            document.getElementById('navbar-placeholder').innerHTML = data;  
-          })
-          .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
-          });
-      </script>      
-
-    <!-- Hero Section -->
-     <div class="full-width-section" style="background-color: #e1ddbf;">
-      <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img src="2025-1 Edited.jpg" class="d-block mx-lg-auto img-fluid" alt="Humam_Al-Taiff" width="700" height="500" loading="lazy">
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3">"Live intentionally, cherish and take pride in every moment"</h1>
-            <p class="lead" style="font-weight: 600;">It is my commitment to do my best in every commitment I make. No matter the job you offer, I can guarantee I will use all my skills to produce my best work.</p>
-            <div class="d-flex gap-2 justify-content-md-start">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">My Work</button>
-                <a href="About Page.html">
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4" style="background-color: #ffffff; color: black;" >More about me</button>
-                    </a>
-              </div>  
-          </div>
-        </div>
-      </div>
-    </div>
-      <style>
-       
-        .card-img-top {
-            width: 100%;      
-            height: 200px;    
-            object-fit: cover;
-        }
-    </style>
-    
-        <!-- Gallery -->
-    <div class="container mt-5 mb-5">
-      <div class="row">
-        <div class="col-12 mb-5">
-          <h3>My Projects</h3>
-        </div>
-      </div>
-        <div class="row">
-            <!-- Card 1 -->
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <a href="NSW Road Crash Report.html">
-                    <img src="imgs\NSW-Roads-Maritime-Services-Logo.png" class="card-img-top" alt=NSW-Roads_Maritime_Services_Logo>
-                    </a>
-                    <div class="card-body">
-                        <a href="NSW Road Crash Report.html">
-                        <h5 class="card-title">NSW Road Crash Report</h5>
-                        </a>
-                        <p class="card-text">This report provides a comprehensive analysis of the New South Wales (NSW) crash data
-                             from 2016 to 2020 uncovering patterns and insights related to road accidents resulting in death and injury. </p>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                  <a href="Bike Sharing Dataset.html">
-                    <img src="imgs\Bike Sharing Dataset Diagnostics-Fitted.png" class="card-img-top" alt="Bikesharing-dataset">
-                  </a>
-                    <div class="card-body">
-                      <a href="Bike Sharing Dataset.html">
-                        <h5 class="card-title">Bike Sharing Dataset</h5>
-                      </a>
-                        <p class="card-text">This report presents an analysis of the Bike Sharing dataset from Washington, 
-                            focusing on insights derived through data cleaning, data visualization, time series analysis, and descriptive data analysis. </p>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                  <a href="Kiwilearn Diagnostics.html">
-                    <img src="imgs\Kiwilearn-thumbnail.png" class="card-img-top" alt="Kiwilearn_Regression_Line">
-                  </a>
-                    <div class="card-body">
-                      <a href="Kiwilearn Diagnostics.html">
-                        <h5 class="card-title">Kiwilearn Diagnostics</h5>
-                      </a>
-                        <p class="card-text">This report analyses the Kiwilearn dataset, focusing on deducing correlations between 
-                            employee performance rating and other variables to determine the best strategy to improve employee's rating.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <a href="Black_Scholes Model.html">
-                    <img src="imgs\BSM thumbnail.png" class="card-img-top" alt="Black_Scholes_Model_Calculator_Thumbnail">
-                    </a>
-                    <div class="card-body">
-                        <a href="Black_Scholes Model.html">
-                        <h5 class="card-title">Black-Scholes Model</h5>
-                        </a>
-                        <p class="card-text">This project employs data mining techniques to analyse stock option chain data, 
-                            utilizing the Black-Scholes model to calculate the value of option prices and graph their volatility skew. This is to begin market forecasting.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div>
-        </div>
-    </div>
-    <div class="full-width-section" style="background-color: #e1ddbf; padding-top: 5px; padding-bottom: 5px;">
-    <div class="container mt-5 mb-5 ">
-        <div class="row mb-3 mt-10">
-          <div class="col-12 text-start">
-            <h3>Education</h3>
-          </div>
-        </div>
-        <div class="row m-5">
-            <div class="col-md-6 d-flex justify-content-center">
-              <img src="imgs\Achievement-1.png" class="square-image w-50" alt="Top 5% in Australia Highschool Achievement 2017">
-            </div>
-            <div class="col-md-6 d-flex justify-content-center pl-5">
-              <img src="imgs\AUT_Logo.png" class="square-image w-50" alt="AUT_logo">
-            </div>
-          </div>
-        <div class="row mt-5 mb-5">
-          <div class="col-12">
-            <ul style="line-height: 1.8;">
-              <li>2017 96.64 Australian Tertiary Admission Rank</li>
-              <li>Mar 2024 Studying Bachelor of Computer Science Majoring in Data Science at AUT – current</li>
-              <li>Completed Level 5 ‘Data Analysis’ course with Distinction at AUT 2024 </li>
-              <li>Completed Level 5 ‘Introduction to Business Programming course for Business Analytics’ at AUT 2024 </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      </div>
-      <div class="container mt-5 mb-5 ">
-        <div class="row mt-5 mb-5">
-          <div class="col-12">
-            <h3>Testimonials</h3>
-          </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-              <h5><b>Ann Fletcher</b> - Client at Cell Tuition</h5>
-              <p>After several months working with Humam, our grandson moved up to the Accelerated Learning 
-                Program for Y9 students.  Humam is applying a consistent learning and revision program that 
-                handshakes with grandson's school's Math curriculum.  This keeps the lad right on top of where he needs to be.  
-                We have watched his love of Math become confident and enquiring.  Thank you Humam.</p>
-            </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <h5><b>Hana Idais</b> - Client at Cell Tuition</h5>
-            <p>This company is highly recommended to all. 
-              My daughter has a very good experience and improved her grades with Humam and Marcel tutorials in Maths and physics, 
-              L3 .Thank you so much. I highly recommend them. Hannah</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <h5><b>Jerry Shen</b> - Owner of Anime House</h5>
-            <p>Humam has been an outstanding member of our team at Anime
-              House. Their positive attitude, strong work ethic, and exceptional customer
-              service skills make them a valuable asset to any organization. I highly
-              recommend Humam for any suitable opportunities they may pursue in the
-              future</p>
-          </div>
-        </div>
-      </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-      <div id="footer-placeholder"></div>
-
-      <script src="footer.js"></script>
-      <script>
-
-      fetch('footer.html')
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
-          return response.text();
-        })
-        .then(data => {
-          document.getElementById('footer-placeholder').innerHTML = data;
-        })
-        .catch(error => {
-          console.error('There was a problem with fetching the footer:', error);
-        });
-      </script>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<a class="brand" href="index.html" aria-label="Humam Al-Taiff home">H<span>.</span>
+</a>
+<nav aria-label="Main navigation">
+<a href="Project.html">Work</a>
+<a href="About Page.html">About</a>
+<a href="Black_Scholes Model.html">Calculator</a>
+<a class="contact-link" href="Contact.html">Let’s talk <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+</nav>
+</header>
+<main id="main">
+<section class="hero">
+<div class="hero-copy">
+<p class="eyebrow">
+<span class="dot">
+</span> DATA SCIENCE / FINANCIAL MODELLING</p>
+<h1>Turning curiosity<br>into <em>clear insight.</em>
+</h1>
+<p class="intro">I’m Humam Al-Taiff. I explore data, build models and turn complex questions into practical tools.</p>
+<div class="actions">
+<a class="button" href="#work">Explore my work <span>
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+<a class="text-link" href="About Page.html">A little about me <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+</div>
+<p class="hero-note">Based in New Zealand · Interested in data, finance and machine learning</p>
+</div>
+<figure class="portrait">
+<img src="2025-1 Edited.jpg" alt="Humam Al-Taiff">
+<figcaption>
+<span>ANALYTICAL THINKING.<br>HUMAN PERSPECTIVE.</span>
+<span>
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</figcaption>
+</figure>
+</section>
+<section id="work" class="section">
+<div class="section-heading">
+<div>
+<p class="eyebrow">01 / SELECTED WORK</p>
+<h2>Questions worth exploring.</h2>
+</div>
+<a class="text-link" href="Project.html">All projects <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+</div>
+<div class="project-grid">
+<article class="project-card">
+<a class="project-image" href="Black_Scholes Model.html">
+<img src="imgs/BSM thumbnail.png" alt="Black–Scholes calculator project visual" loading="lazy">
+<span class="project-number">01</span>
+</a>
+<div class="project-copy">
+<p class="eyebrow">FINANCIAL MODELLING</p>
+<h3>
+<a href="Black_Scholes Model.html">Black–Scholes calculator <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+</h3>
+<p>Explore how price, volatility and time affect the theoretical value of an option.</p>
+<div class="tags">
+<a href="Black_Scholes Model.html#financial-modelling">Financial modelling <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+<a href="Black_Scholes Model.html#data-visualisation">Data visualisation <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+<a href="Black_Scholes Model.html#ui-development">UI development <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+</div>
+<p class="project-result"><strong>Delivered:</strong> An interactive pricing tool with call and put values, Greeks and sensitivity analysis.</p>
+<p class="tools">JavaScript · Python</p>
+</div>
+</article>
+<article class="project-card">
+<a class="project-image" href="Bike Sharing Dataset.html">
+<img src="imgs/Bike Sharing Dataset Diagnostics-Fitted.png" alt="Understanding bike demand project visual" loading="lazy">
+<span class="project-number">02</span>
+</a>
+<div class="project-copy">
+<p class="eyebrow">EXPLORATORY ANALYSIS</p>
+<h3>
+<a href="Bike Sharing Dataset.html">Understanding bike demand <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+</h3>
+<p>Investigate how weather, seasons and rider types relate to bike usage in Washington, D.C.</p>
+<div class="tags">
+<a href="Bike Sharing Dataset.html#data-cleaning">Data cleaning <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+<a href="Bike Sharing Dataset.html#exploratory-analysis">Exploratory analysis <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+<a href="Bike Sharing Dataset.html#data-visualisation">Data visualisation <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+</div>
+<p class="project-result"><strong>Delivered:</strong> A documented cleaning workflow and visual analysis of usage patterns.</p>
+<p class="tools">Python · Pandas · Matplotlib · SciPy</p>
+</div>
+</article>
+<article class="project-card">
+<a class="project-image" href="Kiwilearn Diagnostics.html">
+<img src="imgs/Kiwilearn-thumbnail.png" alt="Kiwilearn diagnostics project visual" loading="lazy">
+<span class="project-number">03</span>
+</a>
+<div class="project-copy">
+<p class="eyebrow">STATISTICAL ANALYSIS</p>
+<h3>
+<a href="Kiwilearn Diagnostics.html">Kiwilearn diagnostics <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+</h3>
+<p>Examine relationships between training, department and employee performance.</p>
+<div class="tags">
+<a href="Kiwilearn Diagnostics.html#hypothesis-testing">Hypothesis testing <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+<a href="Kiwilearn Diagnostics.html#regression-analysis">Regression analysis <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+<a href="Kiwilearn Diagnostics.html#data-visualisation">Data visualisation <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+</div>
+<p class="project-result"><strong>Delivered:</strong> Statistical comparisons and regression diagnostics to inform workforce decisions.</p>
+<p class="tools">Python · Statsmodels · SciPy · Seaborn</p>
+</div>
+</article>
+<article class="project-card">
+<a class="project-image" href="NSW Road Crash Report.html">
+<img src="imgs/Speeds and crashes.png" alt="NSW road crash analysis project visual" loading="lazy">
+<span class="project-number">04</span>
+</a>
+<div class="project-copy">
+<p class="eyebrow">PUBLIC SAFETY DATA</p>
+<h3>
+<a href="NSW Road Crash Report.html">NSW road crash analysis <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+</h3>
+<p>Explore crash severity across speed, lighting, weather and road conditions from 2016–2020.</p>
+<div class="tags">
+<a href="NSW Road Crash Report.html#data-aggregation">Data aggregation <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+<a href="NSW Road Crash Report.html#exploratory-analysis">Exploratory analysis <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+<a href="NSW Road Crash Report.html#data-communication">Data communication <span aria-hidden="true">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</span>
+</a>
+</div>
+<p class="project-result"><strong>Delivered:</strong> Comparative tables showing counts and rates of fatal and injury crashes.</p>
+<p class="tools">Python · Pandas</p>
+</div>
+</article>
+</div>
+</section>
+<section class="statement section">
+<p class="eyebrow">02 / APPROACH</p>
+<h2>Understand the question.<br>Challenge the assumptions.<br>
+<span>Make the result useful.</span>
+</h2>
+<p>My work connects careful analysis with clear communication. Explore the skill tags on each project to see the methods in context.</p>
+</section>
+<section class="section contact-banner">
+<p class="eyebrow">03 / GET IN TOUCH</p>
+<h2>Let’s put curiosity to work.</h2>
+<a class="button" href="Contact.html">Start a conversation <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+</section>
+</main>
+<footer>
+<div>
+<a class="brand" href="index.html">H<span>.</span>
+</a>
+<p>Curiosity. Analysis. Useful outcomes.</p>
+</div>
+<div>
+<a href="mailto:altaiffh@hotmail.com">Email <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+<a href="https://www.linkedin.com/in/humam-al-taiff-bb3a87273/">LinkedIn <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+<a href="https://github.com/Hugh-Ireson">GitHub <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</a>
+</div>
+<small>© Humam Al-Taiff</small>
+</footer>
+<script src="assets/site.js" defer>
+</script>
 </body>
 </html>
